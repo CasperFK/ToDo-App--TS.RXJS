@@ -15,7 +15,8 @@ TasksService.renderTasks(tasks.tasks).subscribe(
     () => console.log('Ok!')
 
 
-const newTask = () => {
+const newTask = (e: Event) => {
+    e.preventDefault();
     tasksService.addNewTask(tasks.tasks, tasks.getFormGroupValues(tasks.tasks))
 }
 document.getElementById('addNewTaskButton').addEventListener('click', newTask)
