@@ -1,0 +1,66 @@
+body { 
+    font-family: 'Arial'; 
+    background: lightgray 
+}
+ul { 
+    list-style-type: none; 
+    padding: 20px; 
+}
+li { 
+    padding: 15px; 
+    background: lightcoral; 
+    margin-bottom: 10px; 
+}
+nav > ul > li:hover {
+    color: whitesmoke;
+    background-color: grey;
+}
+
+.cFormNewTask > label, button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+}
+.cFormNewTask > label > input {
+    float: right;
+    margin: 1% 0;
+    padding: 0 5%;
+}
+.cFormNewTask > label > span {
+    display: inline-block;
+    margin: 1% 0;
+    padding: 0 5%;
+}
+
+
+#tasksLists > div > ul {
+    width: 90%;
+    background-color: lightblue;
+}
+
+#tasksLists > div > ul > li > h2 {
+    display: inline-block;
+    width: 50%;
+    padding: 0 5%;
+}
+
+#tasksLists > div > ul > li > ul {
+    display: inline-block;
+    width: 18%;
+    padding: 0 5%;
+}
+#tasksLists > div > ul > li > ul > li {
+    display: inline-block;
+    padding: 5px 15%;
+    margin: 15% 0;
+}
+#tasksLists > div > ul > li > ul > li > i {
+    font-size: 19px;
+}
+
+.yesDisplay {
+    display: block;
+}
+.noDisplay {
+    display: none;
+}

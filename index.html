@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RxJS Demo</title>
+    <script src="https://kit.fontawesome.com/eef4d416a3.js"></script>
+</head>
+<body>
+    <h1>RxJS Demo</h1> 
+    <nav>
+        <ul id="listsNavigation">
+            <li class="addNewTask" section="addNewTask">Dodaj nowe zadanie</li>
+            <li class="" section="new">Nowe</li>
+            <li class="" section="done">Ukończone</li>
+            <li class="" section="delete">Usunięte</li>
+        </ul>
+    </nav>
+    <form class="cFormNewTask noDisplay">
+            <label for="formTaskName" value="Nazwa zadania: ">
+                <span>Nazwa zadania:</span>
+                <input id="formTaskName" type="text">
+            </label>
+            <label for="formTaskStatus" value="Status zadania:">
+                <span>Status:</span>
+                <input id="formTaskStatus" type="text">
+            </label>
+            <label for="formTaskPriority" value="Priorytet">
+                <span>Priorytet:</span>
+                <input id="formTaskPriority" type="text">
+            </label>
+            <button id="addNewTaskButton">Dodaj nowe zadanie</button>
+        </form>
+    <section id="tasksLists">
+            <div class="cNew yesDisplay">
+                    <h1>Nowe</h1>
+                    <ul id="listNew"></ul>
+                </div>
+                <div class="cDone noDisplay">
+                    <h1>Zrobione</h1>
+                    <ul id="listDone"></ul>
+                </div>
+                <div class="cRemove noDisplay">
+                    <h1>Usunięte</h1>
+                    <ul id="listRemove"></ul>
+                </div>
+    </section>
+    <script src="/bundle.js"></script>
+</body>
+</html>
