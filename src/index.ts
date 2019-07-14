@@ -18,6 +18,7 @@ TasksService.renderTasks(tasks.tasks).subscribe(
 const newTask = (e: Event) => {
     e.preventDefault();
     tasksService.addNewTask(tasks.tasks, tasks.getFormGroupValues(tasks.tasks))
+    alert('Dodano zadanie!');
 }
 document.getElementById('addNewTaskButton').addEventListener('click', newTask)
 
