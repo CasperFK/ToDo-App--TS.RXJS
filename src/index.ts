@@ -1,6 +1,6 @@
 import './css/main.css';
 
-import { Observable } from 'rxjs';
+
 
 import { TasksService, TaskInterface } from "./tasks-providers";
 import { Tasks } from './tasks';
@@ -18,7 +18,11 @@ TasksService.renderTasks(tasks.tasks).subscribe(
 const newTask = (e: Event) => {
     e.preventDefault();
     tasksService.addNewTask(tasks.tasks, tasks.getFormGroupValues(tasks.tasks))
-    alert('Dodano zadanie!');
+    if (tasksService.tasksError) {
+        alert('Nie dodano zadania!');
+    } else {
+        alert('Dodano zadanie!');
+    }
 }
 document.getElementById('addNewTaskButton').addEventListener('click', newTask)
 

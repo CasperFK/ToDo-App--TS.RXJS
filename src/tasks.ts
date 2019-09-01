@@ -1,5 +1,5 @@
 import { TaskInterface, TasksService } from "./tasks-providers";
-import { Observable } from "rxjs";
+
 
 export class Tasks {
     

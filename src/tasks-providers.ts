@@ -12,6 +12,7 @@ export interface TaskInterface {
 
 
 export class TasksService {
+    tasksError: boolean = false
     static status (value: string): boolean {
         const table = ['new', 'done', 'delete'];
         if (table.indexOf(value) != -1) {
@@ -42,7 +43,10 @@ export class TasksService {
                 ( error: any) => console.log(error) ),
                 () => console.log('Ok!')
             
-        } else alert(task.errorAnswear)
+        } else {
+            this.tasksError = true
+            alert(task.errorAnswear)
+        }
         
     }
     static renderTasks(tasks: TaskInterface[]): Observable<TaskInterface[]> {
