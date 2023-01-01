@@ -12,14 +12,14 @@
   "license": "ISC",
   "dependencies": {
     "rxjs": "^6.5.2",
-    "ts-loader": "^6.0.4",
+    "ts-loader": "^9.4.2",
     "typescript": "^3.5.2",
-    "webpack": "^4.35.2",
+    "webpack": "^5.75.0",
     "webpack-dev-server": "^3.7.2"
   },
   "devDependencies": {
-    "css-loader": "^3.0.0",
-    "style-loader": "^0.23.1",
-    "webpack-cli": "^3.3.5"
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^5.0.1"
   }
 }
